@@ -107,7 +107,7 @@ class AddressBook(UserDict):
                     elif congratulation_date.weekday() == 6:
                         congratulation_date += timedelta(days=1)
 
-                        upcoming_birthdays.append({"name": record.name.value, "congratulation_date": congratulation_date.strftime("%d.%m.%Y")})
+                    upcoming_birthdays.append({"name": record.name.value, "congratulation_date": congratulation_date.strftime("%d.%m.%Y")})
 
         return upcoming_birthdays
 
